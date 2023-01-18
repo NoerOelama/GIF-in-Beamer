@@ -1,0 +1,42 @@
+% Embedded animations in Beamer
+\documentclass{beamer}
+
+% Theme choice
+\usetheme{EastLansing}
+
+% Required package
+\usepackage{animate}
+
+% Code syntax highlighter
+\usepackage{minted}
+
+\title{GIF Animation in Beamer}
+%\subtitle{ Your Subtitle is Here}
+
+\author[Arif Nurwahid]{Arif Nurwahid\inst{1}}%%authors
+
+\institute[Ehime University]{Graduate School of Science and Engineering, Ehime University\inst{1}}
+
+\date[Mathematical Science, 2023]{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}{GIF Animation in Beamer}
+\centering
+\animategraphics[loop,width=6cm]{10}{lorenz-}{000}{299}
+\end{frame}
+
+\begin{frame}{How to do so?}
+%%\frametitle{Let's Play a Game (Rules)}
+    \begin{enumerate}
+        \item Prepare your .GIF file!
+        \pause
+        \item Convert GIF to PNGs series. You may use \href{https://imagemagick.org/index.php}{\beamergotobutton{ImageMagick}}
+        \pause
+        \item Embedded animation in Beamer using the code as in this source code.
+    \end{enumerate}
+\end{frame}
+
+\end{document}
